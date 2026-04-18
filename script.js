@@ -94,27 +94,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* =====================================================
-     4. HERO DOTS / SLIDER (decorative auto-cycle)
+     4. HERO DOTS / SLIDER (jQuery)
      ===================================================== */
-  const dots = document.querySelectorAll('.dot');
+  const $dots = $('.dot');
+  const $slides = $('.hero-slide');
   let currentDot = 0;
   let dotInterval;
 
-  function cycleDots() {
-    dots.forEach(d => d.classList.remove('active'));
-    currentDot = (currentDot + 1) % dots.length;
-    dots[currentDot].classList.add('active');
+  function cycleDots(index) {
+    if (index !== undefined) {
+      currentDot = index;
+    } else {
+      currentDot = (currentDot + 1) % $slides.length;
+    }
+    
+    $dots.removeClass('active');
+    $dots.eq(currentDot).addClass('active');
+    
+    $slides.fadeOut(600);
+    $slides.eq(currentDot).fadeIn(600);
   }
 
-  if (dots.length > 1) {
-    dots.forEach((dot, idx) => {
-      dot.addEventListener('click', () => {
-        dots.forEach(d => d.classList.remove('active'));
-        currentDot = idx;
-        dot.classList.add('active');
-        clearInterval(dotInterval);
-        dotInterval = setInterval(cycleDots, 5000);
-      });
+  if ($dots.length > 1 && $slides.length > 1) {
+    $dots.on('click', function() {
+      const idx = $(this).data('slide');
+      clearInterval(dotInterval);
+      cycleDots(idx);
+      dotInterval = setInterval(cycleDots, 5000);
     });
     dotInterval = setInterval(cycleDots, 5000);
   }

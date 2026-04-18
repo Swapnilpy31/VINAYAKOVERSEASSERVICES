@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
   <title>VINAYAK OVERSEAS SERVICES | Manpower & Overseas Recruitment Agency</title>
-  <meta name="description" content="VINAYAK OVERSEAS SERVICES provides expert manpower recruitment, overseas hiring, and staffing solutions across India. RA License No: B-3393/HP/PER/100/5/11399/2026." />
-  <meta name="keywords" content="manpower agency India, overseas recruitment, staffing company Himachal Pradesh, job consultancy India, recruitment agency Una, overseas jobs Himachal" />
+  <meta name="description"
+    content="VINAYAK OVERSEAS SERVICES provides expert manpower recruitment, overseas hiring, and staffing solutions across India. RA License No: B-3393/HP/PER/100/5/11399/2026." />
+  <meta name="keywords"
+    content="manpower agency India, overseas recruitment, staffing company Himachal Pradesh, job consultancy India, recruitment agency Una, overseas jobs Himachal" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="VINAYAK OVERSEAS SERVICES" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="VINAYAK OVERSEAS SERVICES | Manpower & Overseas Recruitment Agency" />
-  <meta property="og:description" content="Connecting skilled professionals with global opportunities. Expert manpower recruitment and overseas hiring across India." />
+  <meta property="og:description"
+    content="Connecting skilled professionals with global opportunities. Expert manpower recruitment and overseas hiring across India." />
   <meta property="og:type" content="website" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <!-- Icons -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- ===================== TOP BAR ===================== -->
-  <div class="top-bar" id="top-bar">
+  <!-- ===================== HEADER (STICKY) ===================== -->
+  <header class="site-header">
+    <!-- ===================== TOP BAR ===================== -->
+    <div class="top-bar" id="top-bar">
     <div class="top-bar-container">
       <div class="top-bar-left">
         <a href="mailto:vinayakoverseas90@gmail.com" class="top-bar-email">
@@ -41,12 +51,9 @@
           <span>+91-8894412776</span>
         </a>
       </div>
-      <div class="top-bar-right">
-        <a href="#" class="top-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="top-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="top-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="top-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="top-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <div class="top-bar-right top-bar-right-stacked">
+        <span class="top-company-name">VINAYAK OVERSEAS SERVICES</span>
+        <span class="top-license-no">RA License No: B-3393/HP/PER/100/5/11399/2026</span>
       </div>
     </div>
   </div>
@@ -54,38 +61,39 @@
   <!-- ===================== NAVBAR ===================== -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
-      <!-- Logo -->
-      <a href="#home" class="nav-logo" id="nav-logo" aria-label="Vinayak Overseas Services Home">
-        <div class="logo-icon">
-         VO
+      <!-- Logo + MEA Branding -->
+      <div class="nav-brand-group">
+        <a href="#home" class="nav-logo" id="nav-logo" aria-label="Vinayak Overseas Services Home">
+          <img src="images/logo.jpeg" alt="Vinayak Overseas Services Logo" class="site-logo">
+        </a>
+        <div class="mea-brand">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Government of India Emblem" class="mea-emblem">
+          <div class="mea-text">
+            <span class="mea-hindi">विदेश मंत्रालय</span>
+            <span class="mea-sub">MINISTRY OF</span>
+            <span class="mea-main">EXTERNAL AFFAIRS</span>
+          </div>
         </div>
-        <div class="logo-text">
-          <span class="logo-name">VINAYAK OVERSEAS</span>
-          <span class="logo-sub">SERVICES</span>
-        </div>
-      </a>
+      </div>
 
       <!-- Desktop Menu -->
       <ul class="nav-menu" id="nav-menu" role="menubar">
         <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
         <li role="none"><a href="#about" class="nav-link" role="menuitem">About Us</a></li>
-        <li role="none" class="has-dropdown">
-          <a href="#services" class="nav-link" role="menuitem">Services <i class="fas fa-chevron-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#services"><i class="fas fa-globe-asia"></i> Overseas Recruitment</a></li>
-            <li><a href="#services"><i class="fas fa-search-dollar"></i> Executive Search</a></li>
-            <li><a href="#services"><i class="fas fa-briefcase"></i> Staffing Solutions</a></li>
-            <li><a href="#services"><i class="fas fa-graduation-cap"></i> Skill Development</a></li>
-          </ul>
-        </li>
-        <li role="none"><a href="#how-it-works" class="nav-link" role="menuitem">Process</a></li>
-        <li role="none"><a href="#why-us" class="nav-link" role="menuitem">Why Us</a></li>
-        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+        <li role="none"><a href="#process" class="nav-link" role="menuitem">Process</a></li>
+        <li role="none"><a href="#whyus" class="nav-link" role="menuitem">Why Us</a></li>
+         
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact Us</a></li>
       </ul>
 
       <!-- CTA + Hamburger -->
       <div class="nav-actions">
-        <a href="#contact" class="btn-get-quotation" id="btn-contact-nav">Get In Touch</a>
+        <!-- Language Select -->
+        <div class="lang-dropdown">
+          <div id="google_translate_element"></div>
+        </div>
+
         <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
           <span class="ham-line"></span>
           <span class="ham-line"></span>
@@ -94,71 +102,64 @@
       </div>
     </div>
   </nav>
+  </header>
 
   <!-- ===================== HERO SECTION ===================== -->
   <section class="hero" id="home" aria-label="Hero Banner">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-container">
-      <!-- Left Content -->
-      <div class="hero-left" data-aos="fade-right">
-        <p class="hero-badge"><span class="badge-line"></span> Trusted Recruitment Partner</p>
-        <h1 class="hero-heading">
-          Expert Global <br />
-          <span class="hero-highlight">Manpower</span> &<br />
-          Overseas Hiring.
-        </h1>
-        <p class="hero-sub">
-          Connecting skilled professionals with top employers across the globe. Licensed, reliable, and results-driven.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#services" class="btn-hero-primary" id="btn-hero-services">Our Services <i class="fas fa-arrow-right"></i></a>
-          <a href="#about" class="btn-hero-outline" id="btn-hero-about">Learn More</a>
-        </div>
-        <div class="hero-stats">
-          <div class="h-stat">
-            <span class="h-stat-num">500<sup>+</sup></span>
-            <span class="h-stat-label">Placements</span>
-          </div>
-          <div class="h-stat-divider"></div>
-          <div class="h-stat">
-            <span class="h-stat-num">10<sup>+</sup></span>
-            <span class="h-stat-label">Years Exp.</span>
-          </div>
-          <div class="h-stat-divider"></div>
-          <div class="h-stat">
-            <span class="h-stat-num">50<sup>+</sup></span>
-            <span class="h-stat-label">Partners</span>
-          </div>
-        </div>
-      </div>
+    <div class="hero-bg-img"></div>
+    <div class="hero-dark-overlay"></div>
 
-      <!-- Right Image Card -->
-      <div class="hero-right" data-aos="fade-left">
-        <div class="hero-img-card">
-          <img src="images/hero_banner.png" alt="Professional recruitment services - Vinayak Overseas" />
-          <div class="hero-badge-card badge-top-right">
-            <div class="hbc-icon"><i class="fas fa-handshake"></i></div>
-            <div class="hbc-text">
-              <strong>Trusted Partner</strong>
-              <span>MEA Licensed Agency</span>
-            </div>
-          </div>
-          <div class="hero-badge-card badge-bottom-left">
-            <div class="hbc-icon"><i class="fas fa-globe-asia"></i></div>
-            <div class="hbc-text">
-              <strong>Global Reach</strong>
-              <span>International Placements</span>
-            </div>
-          </div>
-        </div>
+    <div class="hero-fullcenter">
+      <p class="hero-badge"><span class="badge-line"></span> Trusted Hiring Experts</p>
+      <h1 class="hero-heading">
+        Expert Global <span class="hero-highlight">Manpower</span> &<br>Overseas Hiring.
+      </h1>
+     
+      <div class="hero-cta-group">
+        <a href="#services" class="btn-hero-primary" id="btn-hero-services">Our Services <i class="fas fa-arrow-right"></i></a>
+        <a href="#about" class="btn-hero-outline" id="btn-hero-about">Learn More</a>
       </div>
     </div>
 
-    <!-- Slider Dots -->
-    <div class="hero-dots" id="hero-dots" aria-label="Carousel navigation">
-      <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
-      <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+    <!-- Stats bar at bottom -->
+    <div class="hero-stats-bar">
+      <div class="h-stat">
+        <span class="h-stat-num">500<sup>+</sup></span>
+        <span class="h-stat-label">Placements</span>
+      </div>
+      <div class="h-stat-divider"></div>
+      <div class="h-stat">
+        <span class="h-stat-num">10<sup>+</sup></span>
+        <span class="h-stat-label">Years Exp.</span>
+      </div>
+      <div class="h-stat-divider"></div>
+      <div class="h-stat">
+        <span class="h-stat-num">50<sup>+</sup></span>
+        <span class="h-stat-label">Partners</span>
+      </div>
+      <div class="h-stat-divider"></div>
+      <div class="h-stat">
+        <span class="h-stat-num">30<sup>+</sup></span>
+        <span class="h-stat-label">Countries</span>
+      </div>
+    </div>
+
+    
+
+    <!-- Floating Social Icons -->
+    <div class="hero-social-float" aria-label="Social media links">
+      <a href="#" class="hero-social-icon fb" aria-label="Facebook" target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="hero-social-icon tw" aria-label="Twitter" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="hero-social-icon ig" aria-label="Instagram" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hero-social-icon li" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
     </div>
   </section>
 
@@ -183,7 +184,8 @@
         <!-- Left Image -->
         <div class="about-img-col" data-aos="fade-right">
           <div class="about-img-wrap">
-            <img src="images/about_recruitment.png" alt="Vinayak Overseas Services professional recruitment team" loading="lazy" />
+            <img src="images/about_recruitment.jpeg" alt="Vinayak Overseas Services professional recruitment team"
+              loading="lazy" />
             <div class="about-exp-badge">
               <span class="exp-num">10<sup>+</sup></span>
               <span class="exp-text">Years of<br>Excellence</span>
@@ -201,34 +203,9 @@
             We Bring Expertise To Every Placement,<br />Ensuring Tangible Results.
           </h2>
           <p class="about-desc">
-            VINAYAK OVERSEAS SERVICES is a licensed manpower recruitment and placement agency based in Una, Himachal Pradesh. We specialize in overseas recruitment, executive search, staffing, and skill development — bridging the gap between talented professionals and leading global employers.
-          </p>
-          <div class="about-video-row">
-            <div class="about-thumb-wrap">
-              <img src="images/card_hire_talent.png" alt="Recruitment meeting" loading="lazy" />
-              <a href="#" class="play-btn" aria-label="Watch our story">
-                <i class="fas fa-play"></i>
-              </a>
-            </div>
-            <div class="about-thumb-wrap about-thumb-sm">
-              <img src="images/card_job_seeker.png" alt="Team discussion" loading="lazy" />
-            </div>
-            <div class="about-checklist">
-              <div class="about-check-item">
-                <i class="fas fa-check"></i>
-                <span>Pre-screened professional database</span>
-              </div>
-              <div class="about-check-item">
-                <i class="fas fa-check"></i>
-                <span>MEA Licensed (RA License)</span>
-              </div>
-              <div class="about-check-item">
-                <i class="fas fa-check"></i>
-                <span>Fast international placements</span>
-              </div>
-            </div>
-          </div>
-          <a href="#services" class="btn-learn-more" id="btn-about-services">Learn More <i class="fas fa-arrow-right"></i></a>
+ Vinayak Overseas Services" is a premier overseas recruitment consultancy dedicated to bridging the gap between top-tier Indian talent and leading international employers. With over 10 years of domain expertise, we specialize in end-to-end manpower solutions across the Middle East, Europe, Southeast Asia, Africa, and gulf contries.
+</p>
+         
         </div>
       </div>
     </div>
@@ -241,20 +218,20 @@
         <div class="expertise-top-left" data-aos="fade-right">
           <div class="section-badge-line white">
             <span class="badge-dash"></span>
-            <span class="badge-text">Discover The Art</span>
+            <span class="badge-text">Our Core Mission</span>
           </div>
           <h2 id="expertise-heading" class="section-heading white">
-            Our Expertise: Crafting Results-Driven Campaigns For Overseas Recruitment.
-          </h2>
+           To deliver compliant, ethical, and high-speed recruitment that matches the right candidate with the right culture, while reducing time-to-hire and cost-per-hire for our global partners.</h2>
         </div>
         <div class="expertise-top-right" data-aos="fade-left">
-          <p>With over a decade of experience in manpower and overseas placement, we deliver expert recruitment solutions that connect the right talent with the right employers across the globe.</p>
+          <p>With over a decade of experience in manpower and overseas placement, we deliver expert recruitment
+            solutions that connect the right talent with the right employers across the globe.</p>
         </div>
       </div>
     </div>
     <div class="expertise-cards-row">
       <div class="expertise-img-card" data-aos="fade-right">
-        <img src="images/card_job_seeker.png" alt="Job seeker expertise" loading="lazy" />
+        <img src="images/card_job_seeker.jpeg" alt="Job seeker expertise" loading="lazy" />
         <div class="expertise-card-overlay">
           <div class="ec-icon"><i class="fas fa-search-dollar"></i></div>
           <h3>Executive Search</h3>
@@ -262,7 +239,7 @@
         </div>
       </div>
       <div class="expertise-img-card" data-aos="fade-up">
-        <img src="images/card_submit_resume.png" alt="Resume expertise" loading="lazy" />
+        <img src="images/card_submit_resume.jpeg" alt="Resume expertise" loading="lazy" />
         <div class="expertise-card-overlay">
           <div class="ec-icon"><i class="fas fa-globe-asia"></i></div>
           <h3>Overseas Placement</h3>
@@ -278,61 +255,73 @@
       <div class="section-center-header">
         <div class="section-badge-line centered">
           <span class="badge-dash"></span>
-          <span class="badge-text">Services We Offer</span>
+          <span class="badge-text">Our Core Mission</span>
           <span class="badge-dash"></span>
         </div>
         <h2 id="services-heading" class="section-heading centered">
-          Explore Our Comprehensive Range Of Recruitment Services<br />Designed To Elevate Your Business.
+          Expert Staffing Across Every Industry &amp;<br />Sector We Serve
         </h2>
+        <p class="section-sub-desc">From technical trades to healthcare, we connect top Indian talent with the world's leading employers.</p>
       </div>
 
-      <div class="services-layout">
-        <!-- Left Image with play button -->
-        <div class="services-img-col" data-aos="fade-right">
-          <div class="services-img-wrap">
-            <img src="images/card_hire_talent.png" alt="Our recruitment services" loading="lazy" />
-            <a href="#" class="play-btn play-btn-large" aria-label="Watch services video">
-              <i class="fas fa-play"></i>
-            </a>
+      <!-- Services Image Card Grid -->
+      <div class="svc-img-grid">
+
+        <!-- Card 1: Skilled Trades (Large) -->
+        <div class="svc-img-card svc-large" id="svc-skilled-trades" data-aos="fade-right">
+          <img src="images/svc_skilled_trades.png" alt="Skilled Trades & Technical Staff" loading="lazy" />
+          <div class="svc-img-overlay">
+            <div class="svc-cat-icon"><i class="fas fa-tools"></i></div>
+            <h3>Skilled Trades &amp; Technical Staff</h3>
+            <p>Engineers, welders, electricians, HVAC technicians, and fitters.</p>
+            <a href="#contact" class="svc-img-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- Right: 2x2 Service Grid -->
-        <div class="services-grid" data-aos="fade-left">
-
-          <!-- Featured Service (Highlighted) -->
-          <div class="service-card featured" id="svc-overseas">
-            <div class="svc-icon-wrap"><i class="fas fa-globe-asia"></i></div>
-            <h3>Overseas Recruitment</h3>
-            <p>We facilitate international placements, connecting Indian professionals with top employers across the Middle East, Southeast Asia, and Europe.</p>
-            <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <!-- Card 2: Healthcare -->
+        <div class="svc-img-card" id="svc-healthcare" data-aos="fade-up">
+          <img src="images/svc_healthcare.png" alt="Healthcare Professionals" loading="lazy" />
+          <div class="svc-img-overlay">
+            <div class="svc-cat-icon"><i class="fas fa-user-nurse"></i></div>
+            <h3>Healthcare Professionals</h3>
+            <p>Nurses, doctors, lab technicians, and paramedics.</p>
+            <a href="#contact" class="svc-img-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
           </div>
-
-          <!-- Service 2 -->
-          <div class="service-card" id="svc-exec-search" data-aos="fade-up" data-delay="0">
-            <div class="svc-icon-wrap"><i class="fas fa-search-dollar"></i></div>
-            <h3>Executive Search</h3>
-            <p>Specialized placement for senior-level professionals. We identify, approach, and screen candidates who drive business growth.</p>
-            <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="service-card" id="svc-staffing" data-aos="fade-up" data-delay="100">
-            <div class="svc-icon-wrap"><i class="fas fa-briefcase"></i></div>
-            <h3>Staffing Solutions</h3>
-            <p>From temporary staffing to permanent placements, we deliver flexible workforce solutions aligned with your business objectives.</p>
-            <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="service-card" id="svc-skill-dev" data-aos="fade-up" data-delay="200">
-            <div class="svc-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
-            <h3>Skill Development</h3>
-            <p>We train and upskill candidates to meet industry demands, ensuring they're job-ready and aligned with employer expectations worldwide.</p>
-            <a href="#contact" class="svc-link">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
-
         </div>
+
+        <!-- Card 3: Hospitality -->
+        <div class="svc-img-card" id="svc-hospitality" data-aos="fade-up" data-delay="100">
+          <img src="images/svc_hospitality.png" alt="Hospitality & Retail" loading="lazy" />
+          <div class="svc-img-overlay">
+            <div class="svc-cat-icon"><i class="fas fa-concierge-bell"></i></div>
+            <h3>Hospitality &amp; Retail</h3>
+            <p>Chefs, housekeeping staff, store managers, and customer service leads.</p>
+            <a href="#contact" class="svc-img-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4: IT & BPO -->
+        <div class="svc-img-card" id="svc-it-bpo" data-aos="fade-up" data-delay="200">
+          <img src=" " alt="IT & BPO Experts" loading="lazy" />
+          <div class="svc-img-overlay">
+            <div class="svc-cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>IT &amp; BPO Experts</h3>
+            <p>Software developers, data analysts, helpdesk support, and team leads.</p>
+            <a href="#contact" class="svc-img-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 5: Oil & Gas (Large) -->
+        <div class="svc-img-card svc-large" id="svc-oil-gas" data-aos="fade-left" data-delay="300">
+          <img src="images/svc_oil_gas.png" alt="Oil & Gas and Construction" loading="lazy" />
+          <div class="svc-img-overlay">
+            <div class="svc-cat-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>Oil &amp; Gas and Construction</h3>
+            <p>Rig workers, safety officers, project managers, and heavy equipment operators.</p>
+            <a href="#contact" class="svc-img-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -349,7 +338,8 @@
         <h2 class="section-heading white">
           Intersection Of Vision And Results With Our Strategic Recruitment Services.
         </h2>
-        <p>We match global ambition with local expertise. Whether you're a job seeker or an employer, we are your most reliable partner.</p>
+        <p>We match global ambition with local expertise. Whether you're a job seeker or an employer, we are your most
+          reliable partner.</p>
         <div class="vision-feature-box">
           <i class="fas fa-star"></i>
           <div>
@@ -360,12 +350,13 @@
       </div>
       <div class="vision-right" data-aos="fade-left">
         <div class="vision-img-wrap">
-          <img src="images/card_submit_resume.png" alt="Vision for success" loading="lazy" />
+          <img src="images/card_submit_resume.jpeg" alt="Vision for success" loading="lazy" />
           <div class="vision-overlay-card">
             <i class="fas fa-building"></i>
             <div>
               <strong>Our Business</strong>
-              <span>RA License: B-3393/HP/PER/100/5/11399/2026. Fully compliant manpower agency serving India and the world.</span>
+              <span>RA License: B-3393/HP/PER/100/5/11399/2026. Fully compliant manpower agency serving India and the
+                world.</span>
             </div>
           </div>
         </div>
@@ -378,7 +369,7 @@
     <div class="container hiw-grid">
       <!-- Left Image -->
       <div class="hiw-img-col" data-aos="fade-right">
-        <img src="images/about_recruitment.png" alt="How our recruitment process works" loading="lazy" />
+        <img src="images/about_recruitment.jpeg" alt="How our recruitment process works" loading="lazy" />
       </div>
 
       <!-- Center: Steps -->
@@ -395,21 +386,24 @@
             <div class="step-num">01.</div>
             <div class="step-content">
               <h4>Talk With Our Team</h4>
-              <p>Share your requirements — whether you're a candidate or employer — and we'll assess the best path forward.</p>
+              <p>Share your requirements — whether you're a candidate or employer — and we'll assess the best path
+                forward.</p>
             </div>
           </div>
           <div class="hiw-step" id="step-2">
             <div class="step-num">02.</div>
             <div class="step-content">
               <h4>We Make A Plan</h4>
-              <p>Our experts craft a tailored recruitment strategy, shortlisting candidates and matching them to the right opportunities.</p>
+              <p>Our experts craft a tailored recruitment strategy, shortlisting candidates and matching them to the
+                right opportunities.</p>
             </div>
           </div>
           <div class="hiw-step" id="step-3">
             <div class="step-num">03.</div>
             <div class="step-content">
               <h4>Placement & Support</h4>
-              <p>We handle visa documentation, onboarding, and post-placement follow-up to ensure a smooth transition.</p>
+              <p>We handle visa documentation, onboarding, and post-placement follow-up to ensure a smooth transition.
+              </p>
             </div>
           </div>
         </div>
@@ -418,7 +412,7 @@
       <!-- Right Mini Image -->
       <div class="hiw-mini-col" data-aos="fade-left">
         <div class="hiw-mini-img-wrap">
-          <img src="images/card_hire_talent.png" alt="Recruitment meeting" loading="lazy" />
+          <img src="images/card_hire_talent.jpeg" alt="Recruitment meeting" loading="lazy" />
           <a href="#" class="play-btn play-btn-sm" aria-label="Watch process video">
             <i class="fas fa-play"></i>
           </a>
@@ -427,126 +421,81 @@
     </div>
   </section>
 
-  <!-- ===================== WHY CHOOSE US ===================== -->
+  <!-- ===================== WHY PARTNER WITH US ===================== -->
   <section class="why-us" id="why-us" aria-labelledby="why-heading">
-    <div class="container why-grid">
-      <!-- Left Content -->
-      <div class="why-left" data-aos="fade-right">
-        <div class="section-badge-line">
-          <span class="badge-dash"></span>
-          <span class="badge-text">Why Choose Us</span>
-        </div>
-        <h2 id="why-heading" class="section-heading">
-          Discover The Reasons Why Candidates & Employers Choose Vinayak Overseas.
-        </h2>
-        <div class="why-features-grid">
-          <div class="why-feature active" id="feat-expertise">
-            <div class="wf-icon"><i class="fas fa-award"></i></div>
-            <div class="wf-text">
-              <h4>Deep Industry Expertise</h4>
-              <p>Over a decade of experience in international manpower and recruitment across key sectors.</p>
-            </div>
-          </div>
-          <div class="why-feature" id="feat-innovation">
-            <div class="wf-icon"><i class="fas fa-lightbulb"></i></div>
-            <div class="wf-text">
-              <h4>Innovative Approach</h4>
-              <p>Modern recruitment tools and strategies that deliver faster, better outcomes.</p>
-            </div>
-          </div>
-          <div class="why-feature" id="feat-results">
-            <div class="wf-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="wf-text">
-              <h4>Results-Driven</h4>
-              <p>We measure success by the quality and longevity of every placement we make.</p>
-            </div>
-          </div>
-          <div class="why-feature" id="feat-partner">
-            <div class="wf-icon"><i class="fas fa-handshake"></i></div>
-            <div class="wf-text">
-              <h4>Collaborative Partnership</h4>
-              <p>We work closely with both clients and candidates to ensure mutual long-term success.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Image -->
-      <div class="why-right" data-aos="fade-left">
-        <div class="why-img-wrap">
-          <img src="images/card_submit_resume.png" alt="Why choose Vinayak Overseas" loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PRICING / PACKAGES SECTION ===================== -->
-  <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
-    <div class="pricing-overlay"></div>
     <div class="container">
       <div class="section-center-header">
-        <div class="section-badge-line centered white">
+        <div class="section-badge-line centered">
           <span class="badge-dash"></span>
-          <span class="badge-text">Pricing Plans</span>
+          <span class="badge-text">Why Partner With Us?</span>
           <span class="badge-dash"></span>
         </div>
-        <h2 id="pricing-heading" class="section-heading centered white">Let's Discover Our Transparent Service Plans.</h2>
+        <h2 id="why-heading" class="section-heading centered">
+          Discover The Reasons Why Employers Choose Vinayak Overseas.
+        </h2>
       </div>
-      <div class="pricing-grid">
-        <!-- Plan 1 -->
-        <div class="pricing-card" id="plan-basic">
-          <div class="plan-tag">STARTER PLAN</div>
-          <div class="plan-price">Free <span>Registration</span></div>
-          <ul class="plan-features">
-            <li><i class="fas fa-check"></i> CV Submission</li>
-            <li><i class="fas fa-check"></i> Job Matching</li>
-            <li><i class="fas fa-check"></i> Basic Counselling</li>
-            <li><i class="fas fa-check"></i> Email Support</li>
-          </ul>
-          <a href="#contact" class="btn-plan">Get Started</a>
+
+      <div class="why-features-grid-full">
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div class="wf-text">
+            <h4>Pan-India Talent Pool</h4>
+            <p>Access to candidates from metro cities (Mumbai, Delhi, Bangalore) and tier-2/tier-3 towns, ensuring cost-effective salary expectations.</p>
+          </div>
         </div>
-        <!-- Plan 2 (Featured) -->
-        <div class="pricing-card featured" id="plan-growth">
-          <div class="plan-popular">POPULAR</div>
-          <div class="plan-tag">OVERSEAS PLAN</div>
-          <div class="plan-price">Custom <span>/ Package</span></div>
-          <ul class="plan-features">
-            <li><i class="fas fa-check"></i> All Starter Features</li>
-            <li><i class="fas fa-check"></i> Overseas Job Placement</li>
-            <li><i class="fas fa-check"></i> Visa Documentation Support</li>
-            <li><i class="fas fa-check"></i> Pre-departure Briefing</li>
-            <li><i class="fas fa-check"></i> Priority Processing</li>
-          </ul>
-          <a href="#contact" class="btn-plan">Get Started</a>
+
+        <div class="why-feature active">
+          <div class="wf-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="wf-text">
+            <h4>Stringent Screening</h4>
+            <p>Multi-stage verification including skill tests, background checks, medical profiling, and video interviews.</p>
+          </div>
         </div>
-        <!-- Plan 3 -->
-        <div class="pricing-card" id="plan-pro">
-          <div class="plan-tag">EMPLOYER PLAN</div>
-          <div class="plan-price">Flexible <span>/ Contract</span></div>
-          <ul class="plan-features">
-            <li><i class="fas fa-check"></i> Candidate Sourcing</li>
-            <li><i class="fas fa-check"></i> Pre-screening & Interviews</li>
-            <li><i class="fas fa-check"></i> Compliance Support</li>
-            <li><i class="fas fa-check"></i> Post-placement Follow-up</li>
-          </ul>
-          <a href="#contact" class="btn-plan">Get Started</a>
+
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-passport"></i></div>
+          <div class="wf-text">
+            <h4>Visa & Compliance Mastery</h4>
+            <p>In-house team for passport, attestation, visa processing, and emigration clearance (ECR/ECNR).</p>
+          </div>
         </div>
-        <!-- Plan 4 -->
-        <div class="pricing-card" id="plan-enterprise">
-          <div class="plan-tag">ENTERPRISE PLAN</div>
-          <div class="plan-price">Call Us</div>
-          <ul class="plan-features">
-            <li><i class="fas fa-check"></i> All Employer Features</li>
-            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
-            <li><i class="fas fa-check"></i> Bulk Hiring Solutions</li>
-            <li><i class="fas fa-check"></i> Annual HR Consulting</li>
-            <li><i class="fas fa-check"></i> SLA-backed Placement</li>
-          </ul>
-          <a href="#contact" class="btn-plan">Contact Us</a>
+
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-stopwatch"></i></div>
+          <div class="wf-text">
+            <h4>Fast Turnaround</h4>
+            <p>Typical shortlisting within 48–72 hours; complete deployment in 30–45 days.</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="wf-text">
+            <h4>Post-Deployment Support</h4>
+            <p>Onboarding assistance, grievance handling, and candidate follow-ups during probation.</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-certificate"></i></div>
+          <div class="wf-text">
+            <h4>Certifications & Affiliations</h4>
+            <p>Registered with the Ministry of External Affairs (India) | B-3393/HP/PER/100/5/11399/2026</p>
+          </div>
+        </div>
+
+        <div class="why-feature">
+          <div class="wf-icon"><i class="fas fa-handshake"></i></div>
+          <div class="wf-text">
+            <h4>Our Promise</h4>
+            <p>100% documented recruitment | Zero substitution of candidates | Transparent fee structure | Long-term after-sales support</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- ===================== FAQ SECTION ===================== -->
   <section class="faq-section" id="faq" aria-labelledby="faq-heading">
@@ -567,7 +516,7 @@
       <!-- Right: Accordion -->
       <div class="faq-right" data-aos="fade-left">
         <div class="faq-img-top">
-          <img src="images/card_job_seeker.png" alt="FAQ - Candidates" loading="lazy" />
+          <img src="images/card_job_seeker.jpeg" alt="FAQ - Candidates" loading="lazy" />
         </div>
         <div class="faq-accordion" id="faq-accordion">
           <div class="faq-item active" id="faq-1">
@@ -576,7 +525,9 @@
               <i class="fas fa-chevron-up"></i>
             </button>
             <div class="faq-answer">
-              <p>The timeline varies by role and destination. Typically, domestic placements take 2–4 weeks while overseas placements, including visa processing, can take 4–12 weeks depending on the country and employer requirements.</p>
+              <p>The timeline varies by role and destination. Typically, domestic placements take 2–4 weeks while
+                overseas placements, including visa processing, can take 4–12 weeks depending on the country and
+                employer requirements.</p>
             </div>
           </div>
           <div class="faq-item" id="faq-2">
@@ -585,7 +536,8 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-              <p>Simply contact our office or fill out the form below. Submit your CV, and our counselors will schedule a consultation to understand your background and match you with suitable opportunities.</p>
+              <p>Simply contact our office or fill out the form below. Submit your CV, and our counselors will schedule
+                a consultation to understand your background and match you with suitable opportunities.</p>
             </div>
           </div>
           <div class="faq-item" id="faq-3">
@@ -594,7 +546,9 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-              <p>Basic registration and job matching services are free for candidates. Specific overseas placement packages may have associated service fees, which are discussed transparently before any agreement is signed.</p>
+              <p>Basic registration and job matching services are free for candidates. Specific overseas placement
+                packages may have associated service fees, which are discussed transparently before any agreement is
+                signed.</p>
             </div>
           </div>
           <div class="faq-item" id="faq-4">
@@ -603,7 +557,8 @@
               <i class="fas fa-chevron-down"></i>
             </button>
             <div class="faq-answer">
-              <p>We primarily place candidates in the Middle East (UAE, Saudi Arabia, Qatar, Kuwait, Oman), Southeast Asia, and European countries, matching industry expertise with employer needs.</p>
+              <p>We primarily place candidates in the Middle East (UAE, Saudi Arabia, Qatar, Kuwait, Oman), Southeast
+                Asia, and European countries, matching industry expertise with employer needs.</p>
             </div>
           </div>
         </div>
@@ -611,68 +566,15 @@
     </div>
   </section>
 
-  <!-- ===================== CONTACT SECTION ===================== -->
-  <section class="contact" id="contact" aria-labelledby="contact-heading">
-    <div class="container">
-      <div class="section-center-header">
-        <div class="section-badge-line centered">
+  
+
+  <!-- ===================== FOOTER CTA BAR ===================== -->
+  <div class="footer-cta-bar">
+            <div class="section-badge-line centered">
           <span class="badge-dash"></span>
           <span class="badge-text">Get In Touch</span>
           <span class="badge-dash"></span>
         </div>
-        <h2 id="contact-heading" class="section-heading centered">Reach Out To Us For Recruitment Services,<br />Job Opportunities, Or Any Inquiry</h2>
-      </div>
-
-      <!-- <div class="contact-grid">
-        <!-- Left: Info --
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-info-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-detail">
-              <h4>Our Address</h4>
-              <p>Shop No 5, Ground & First Floor,<br />Old Hoshiarpur Road, Una,<br />Himachal Pradesh - 174303</p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-            <div class="contact-detail">
-              <h4>Phone Number</h4>
-              <p><a href="tel:+918894412776">+91-8894412776</a></p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-detail">
-              <h4>Email Address</h4>
-              <p><a href="mailto:vinayakoverseas90@gmail.com">vinayakoverseas90@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon"><i class="fas fa-certificate"></i></div>
-            <div class="contact-detail">
-              <h4>RA License Number</h4>
-              <p>B-3393/HP/PER/100/5/11399/2026</p>
-            </div>
-          </div>
- 
-          <div class="contact-social">
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div> --
-        </div>
-
-
-      </div> -->
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER CTA BAR ===================== -->
-  <div class="footer-cta-bar">
     <div class="container footer-cta-inner">
       <p class="footer-cta-title">Start Consultation With Us</p>
       <div class="footer-cta-contacts">
@@ -701,14 +603,10 @@
 
         <!-- Brand -->
         <div class="footer-brand">
-          <div class="footer-logo">
-            <div class="footer-logo-icon"><i class="fas fa-globe-asia"></i></div>
-            <div>
-              <span class="footer-logo-name">VINAYAK OVERSEAS</span>
-              <span class="footer-logo-sub">SERVICES</span>
-            </div>
-          </div>
-           <div class="contact-info-item">
+          <a href="#home" class="footer-logo">
+            <img src="images/logo.jpeg" alt="Vinayak Overseas Services Logo" class="site-logo-footer">
+          </a>
+          <div class="contact-info-item">
             <!-- <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div> -->
             <div class="contact-detail">
               <h4>Our Address</h4>
@@ -740,11 +638,11 @@
         <div class="footer-col">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Overseas Recruitment</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Executive Search</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Staffing Solutions</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Skill Development</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> HR Consulting</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Healthcare Professionals</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Hospitality & Retail</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> IT & BPO Experts</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Oil & Gas and Construction</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Skilled Trades & Technical Staff</a></li>
           </ul>
         </div>
 
@@ -780,6 +678,31 @@
     <span>Message sent successfully! We'll get back to you soon.</span>
   </div>
 
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,sa,ne,sd,gom,doi,bho,mai,mni'
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // Fix Google Translate body offset on language change
+    (function fixGoogleTranslatePush() {
+      var observer = new MutationObserver(function() {
+        if (document.body.style.top && document.body.style.top !== '0px') {
+          document.body.style.top = '0px';
+        }
+        // Also hide the banner iframe if it appears
+        var banner = document.querySelector('.goog-te-banner-frame');
+        if (banner) banner.style.display = 'none';
+      });
+      observer.observe(document.body, { attributes: true, attributeFilter: ['style'], subtree: false });
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
+
 </html>
