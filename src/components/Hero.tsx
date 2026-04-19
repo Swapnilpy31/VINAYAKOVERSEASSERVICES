@@ -82,7 +82,7 @@ export default function Hero() {
                 </div>
 
                 {/* ── Social Icons Sidebar ── */}
-                <div className="hidden md:flex fixed right-0 top-[50%] -translate-y-1/2 flex-col z-[100]">
+                <div className="hidden md:flex absolute right-0 top-[50%] -translate-y-1/2 flex-col z-[100]">
                     <a
                         href="https://facebook.com"
                         target="_blank" rel="noreferrer"
