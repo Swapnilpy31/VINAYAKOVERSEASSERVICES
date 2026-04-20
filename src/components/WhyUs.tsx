@@ -145,7 +145,7 @@ export default function WhyUs() {
 
                                 {/* Name Overlay Flag */}
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#23352b] via-[#23352b]/80 to-transparent p-8 pt-16">
-                                    <h3 className="text-3xl font-extrabold text-white mb-1">Sanjeev Kumar</h3>
+                                    <h3 className="text-3xl font-extrabold text-white mb-1">Khushi Ram (Urf Sanjeev Kumar)</h3>
                                     <p className="text-[#F5B301] font-semibold text-sm tracking-widest uppercase">
                                         Visa & Immigration Consultant
                                     </p>
@@ -166,12 +166,12 @@ export default function WhyUs() {
                             </div>
 
                             <AnimatedHeading 
-                                text="About Sanjeev Kumar\n[Visa & Immigration Consultant]"
+                                text={`About Khushi Ram\n[Founder and CEO]`}
                                 className="text-3xl lg:text-4xl font-bold text-[#23352b] leading-tight"
                             />
 
                             <p className="text-[#4B5563] text-lg leading-relaxed">
-                                Sanjeev Kumar is a highly experienced visa and immigration consultant based in Una, Himachal Pradesh, with over 12 years of expertise in international visa processing and documentation.
+                                Khushi Ram (popularly known as Sanjeev Kumar) is a highly experienced visa and immigration consultant based in Una, Himachal Pradesh, with over 12 years of expertise in international visa processing and documentation.
                             </p>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">

@@ -3,10 +3,40 @@ import Navbar from "@/components/Navbar";
 import ProcessComponent from "@/components/Process";
 import Footer from "@/components/Footer";
 
+const BASE_URL = 'https://www.vinayakoverseasservices.com';
+
 export const metadata: Metadata = {
-  title: 'Our Process | VCS Website',
-  description: 'Understand our 6-step global recruitment process that ensures right talent matching from requirement analysis to final deployment.',
+  title: 'Our 6-Step Recruitment Process | MEA-Approved Overseas Hiring | VCS',
+  description:
+    'Learn how VCS Una recruits skilled manpower overseas in 6 transparent steps — from requirement analysis and candidate sourcing to visa processing and final deployment.',
+  keywords: [
+    'overseas recruitment process India',
+    'how to get overseas job Una HP',
+    'manpower hiring steps abroad',
+    'visa processing recruitment agency Una',
+    'step by step overseas placement Una Himachal',
+    'MEA approved recruitment process',
+  ],
+  alternates: {
+    canonical: `${BASE_URL}/process`,
+  },
+  openGraph: {
+    title: 'Our 6-Step Overseas Recruitment Process | VCS — Una, HP',
+    description:
+      'Transparent 6-step process from job order to final deployment. See how VCS Una ensures legal, ethical, fast overseas placements.',
+    url: `${BASE_URL}/process`,
+    images: [{ url: '/images/hero_city_buildings.png', width: 1200, height: 630, alt: 'VCS Recruitment Process' }],
+    type: 'website',
+    siteName: 'Vinayak Overseas Services',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '6-Step Overseas Recruitment Process | VCS Una HP',
+    description: 'Transparent, legal overseas recruitment in 6 steps from Una, HP.',
+    images: ['/images/hero_city_buildings.png'],
+  },
 };
+
 
 export default function ProcessPage() {
   return (
@@ -14,7 +44,7 @@ export default function ProcessPage() {
       <Navbar />
       <div className="flex-grow">
         {/* Hero Banner for Process Page */}
-        <section className="relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
+        <section className="hidden md:block relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
           {/* Modern Grid Background */}
           <div 
               className="absolute inset-0 z-0"

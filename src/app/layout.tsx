@@ -34,6 +34,20 @@ export const metadata: Metadata = {
     'international manpower consultancy',
     'VCS Website',
     'overseas staffing India',
+    // Local Una / HP SEO keywords
+    'overseas recruitment in Una',
+    'foreign job consultants Una Himachal',
+    'visa consultant Una',
+    'Canada PR consultancy Una',
+    'Germany nursing jobs Una',
+    'Dubai job agencies near me Una HP',
+    'nursing jobs in UK from Una',
+    'driver jobs abroad Una HP',
+    'construction work visa Una',
+    'abroad job placement Hamirpur students',
+    'foreign recruitment near Chandigarh road',
+    'manpower agency Una Himachal Pradesh',
+    'overseas jobs Una HP',
   ],
   openGraph: {
     type: 'website',
@@ -62,23 +76,37 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   icons: {
     icon: '/images/logo.jpeg',
     apple: '/images/logo.jpeg',
   },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  verification: {
+    // Add Google Search Console verification code here when available
+    // google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+  },
 };
 
 const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'VCS Website',
-  alternateName: 'VCS',
+  '@type': ['Organization', 'LocalBusiness'],
+  '@id': `${BASE_URL}/#organization`,
+  name: 'Vinayak Overseas Services',
+  alternateName: ['VCS', 'VCS Website', 'Aadrash Manpower'],
   url: BASE_URL,
-  logo: `${BASE_URL}/images/logo.jpeg`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${BASE_URL}/images/logo.jpeg`,
+    width: 200,
+    height: 200,
+  },
+  image: `${BASE_URL}/images/hero_city_buildings.png`,
   description:
-    'MEA approved overseas manpower recruitment agency connecting skilled Indian professionals with international employers across Gulf, Middle East, Asia and Europe.',
+    'MEA-approved overseas manpower recruitment agency in Una, Himachal Pradesh. Connecting skilled Indian professionals with international employers in Gulf, Middle East, Europe & Asia.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Shop No 5, Ground & First Floor, Old Hoshiarpur Road',
@@ -86,6 +114,11 @@ const organizationSchema = {
     addressRegion: 'Himachal Pradesh',
     postalCode: '174303',
     addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '31.4697',
+    longitude: '76.2729',
   },
   contactPoint: [
     {
@@ -96,12 +129,40 @@ const organizationSchema = {
     },
   ],
   email: 'vinayakoverseas90@gmail.com',
+  telephone: '+91-8894412776',
   foundingDate: '2014',
-  numberOfEmployees: '10-50',
+  areaServed: ['Una', 'Hamirpur', 'Kangra', 'Himachal Pradesh', 'Punjab', 'India'],
+  priceRange: '₹₹',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '09:30',
+      closes: '18:30',
+    },
+  ],
   sameAs: [
     'https://www.facebook.com/vinayakoverseasservices',
     'https://www.linkedin.com/company/vinayakoverseasservices',
   ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  url: BASE_URL,
+  name: 'Vinayak Overseas Services',
+  description: 'MEA-approved overseas recruitment agency — Una, Himachal Pradesh',
+  publisher: { '@id': `${BASE_URL}/#organization` },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${BASE_URL}/services?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -111,6 +172,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body

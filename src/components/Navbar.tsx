@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Services", href: "/services" },
   { name: "Process", href: "/process" },
   { name: "Why Choose Us", href: "/why-choose-us" },
+  { name: "Requirements", href: "/requirements" },
   { name: "Contact Info", href: "/contact-info" },
 ];
 

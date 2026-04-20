@@ -3,10 +3,43 @@ import Navbar from "@/components/Navbar";
 import ServicesComponent from "@/components/Services";
 import Footer from "@/components/Footer";
 
+const BASE_URL = 'https://www.vinayakoverseasservices.com';
+
 export const metadata: Metadata = {
-  title: 'Our Services | VCS Website',
-  description: 'Explore our comprehensive overseas recruitment services, from candidate screening and visa processing to bulk hiring and deployment support.',
+  title: 'Overseas Recruitment Services | Skilled, Healthcare, IT & Oil & Gas Staffing | VCS',
+  description:
+    'VCS provides MEA-approved overseas staffing across healthcare, skilled trades, IT, hospitality, oil & gas, and construction. Serving employers worldwide from Una, Himachal Pradesh.',
+  keywords: [
+    'overseas recruitment services India',
+    'international manpower agency',
+    'MEA approved staffing',
+    'healthcare recruitment abroad',
+    'skilled trade workers overseas',
+    'IT BPO recruitment India',
+    'oil gas construction workforce',
+    'foreign job placement Una HP',
+    'overseas staffing Una Himachal Pradesh',
+  ],
+  alternates: {
+    canonical: `${BASE_URL}/services`,
+  },
+  openGraph: {
+    title: 'Overseas Recruitment Services | VCS — Una, Himachal Pradesh',
+    description:
+      'Skilled manpower for healthcare, IT, oil & gas, hospitality, and construction sectors. MEA-approved overseas recruitment from Una, HP.',
+    url: `${BASE_URL}/services`,
+    images: [{ url: '/images/hero_city_buildings.png', width: 1200, height: 630, alt: 'VCS Services' }],
+    type: 'website',
+    siteName: 'Vinayak Overseas Services',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Overseas Recruitment Services | VCS Una HP',
+    description: 'MEA-approved staffing for healthcare, IT, oil & gas & more.',
+    images: ['/images/hero_city_buildings.png'],
+  },
 };
+
 
 export default function ServicesPage() {
   return (
@@ -14,7 +47,7 @@ export default function ServicesPage() {
       <Navbar />
       <div className="flex-grow">
         {/* Hero Banner for Services Page */}
-        <section className="relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
+        <section className="hidden md:block relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
           {/* Modern Grid Background */}
           <div 
               className="absolute inset-0 z-0"

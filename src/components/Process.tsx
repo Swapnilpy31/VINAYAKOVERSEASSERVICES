@@ -76,25 +76,34 @@ export default function Process() {
                 <div key={idx} className="relative w-full">
 
                   {/* Floating Number Box (Timeline Marker) */}
-                  <div className="absolute left-[28px] md:left-1/2 top-4 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 z-10 w-12 h-12 bg-[#0B1F3A] border-2 border-[#F5B301] flex items-center justify-center shadow-lg transition-transform hover:scale-110 duration-300">
+                  <div className="absolute left-[28px] md:left-1/2 top-4 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 z-10 w-12 h-12 bg-[#23352b] border-2 border-[#F5B301] flex items-center justify-center shadow-lg transition-transform hover:scale-110 duration-300">
                     <span className="text-[#F5B301] font-black text-lg">{step.num}</span>
                   </div>
 
                   {/* Content Container */}
                   <div className={`w-full md:w-[45%] pl-20 md:pl-0 ${boxMargin}`}>
-                    <div className="bg-white border border-[#E5E7EB] p-8 hover:bg-[#0B1F3A] group transition-all duration-400 shadow-sm hover:shadow-2xl hover:-translate-y-1">
+                    <div className="relative overflow-hidden bg-white border border-[#E5E7EB] p-8 group transition-all duration-300 shadow-sm hover:shadow-2xl hover:-translate-y-1 hover:border-[#23352b]">
 
-                      {/* Step Number Backdrop (Visible on Hover) */}
-                      <div className="text-6xl font-extrabold text-[#23352b] group-hover:text-white/5 absolute top-2 right-4 leading-none select-none transition-colors duration-300 pointer-events-none">
+                      {/* Left accent bar — slides in on hover */}
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#F5B301] scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-bottom" />
+
+                      {/* Hover background fill */}
+                      <div className="absolute inset-0 bg-[#23352b] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+                      {/* Ghost number — always visible, fades on hover */}
+                      <div className="absolute top-2 right-4 text-6xl font-extrabold leading-none select-none pointer-events-none text-[#23352b]/8 group-hover:text-white/5 transition-colors duration-300">
                         {step.num}
                       </div>
 
-                      <h4 className={`text-xl font-bold text-[#0B1F3A] group-hover:text-[#F5B301] mb-3 transition-colors duration-300 text-left ${textAlign}`}>
-                        {step.title}
-                      </h4>
-                      <p className={`text-[#4B5563] text-sm leading-relaxed group-hover:text-white/80 transition-colors duration-300 text-left ${textAlign}`}>
-                        {step.desc}
-                      </p>
+                      {/* Content (sits above the pseudo-bg) */}
+                      <div className="relative z-10">
+                        <h4 className={`text-xl font-bold text-[#23352b] group-hover:text-[#F5B301] mb-3 transition-colors duration-300 text-left ${textAlign}`}>
+                          {step.title}
+                        </h4>
+                        <p className={`text-[#4B5563] text-sm leading-relaxed group-hover:text-white/75 transition-colors duration-300 text-left ${textAlign}`}>
+                          {step.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
 
@@ -105,19 +114,7 @@ export default function Process() {
 
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-20 text-center">
-          <p className="text-[#4B5563] mb-6">
-            Ready to start your recruitment journey? Contact us today.
-          </p>
-          <a href="#contact" className="btn-primary inline-flex uppercase">
-            Start Hiring Now
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-
+        
       </div>
     </section>
   );

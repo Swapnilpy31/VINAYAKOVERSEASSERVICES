@@ -42,7 +42,7 @@ export default function FAQ() {
                         </div>
 
                         <AnimatedHeading 
-                            text="Discover Quick Answers\nTo Common Questions."
+                            text={`Discover Quick Answers\nTo Common Questions.`}
                             className="text-3xl md:text-4xl font-extrabold text-[#23352b] leading-tight mb-5"
                         />
 
@@ -50,26 +50,17 @@ export default function FAQ() {
                             Have more questions? Our team is always ready to help you navigate the recruitment journey.
                         </p>
 
-                        <a
+                        {/* <a
                             href="#contact"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-[#F5B301] hover:bg-[#d9a000] text-[#23352b] font-bold text-sm transition-all shadow hover:shadow-[#F5B301]/30 hover:-translate-y-0.5"
                         >
                             See All FAQs <ArrowRight className="w-4 h-4" />
-                        </a>
+                        </a> */}
                     </div>
 
                     {/* RIGHT */}
                     <div className="flex flex-col gap-4">
-                        {/* Image */}
-                        <div className="relative w-full h-52 overflow-hidden shadow-lg mb-2">
-                            <Image
-                                src="/images/modern_indian_recruitment.png"
-                                alt="Recruitment Office"
-                                fill
-                                className="object-cover hover:scale-105 transition-transform duration-700"
-                            />
-                            <div className="absolute inset-0 bg-[#23352b]/25" />
-                        </div>
+                        
 
                         {/* Accordion */}
                         {faqs.map((faq, idx) => {
