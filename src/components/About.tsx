@@ -25,7 +25,7 @@ export default function About({ showCertificate = true }: { showCertificate?: bo
           <div className="lg:w-1/2 relative w-full">
             <div className="relative overflow-hidden shadow-2xl z-10 w-full h-[350px] md:h-[520px]">
               <Image
-                src="/images/modern_indian_recruitment.png"
+                src="/images/corporate_desk_empty.png"
                 alt="Expert Recruitment Team"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"

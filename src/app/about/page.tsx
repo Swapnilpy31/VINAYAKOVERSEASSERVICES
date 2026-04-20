@@ -29,7 +29,7 @@ export default function AboutPage() {
             <Navbar />
             <div className="flex-grow">
                 {/* Hero Banner for About Page */}
-                <section className="relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
+                <section className="hidden md:block relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden">
                     {/* Modern Grid Background */}
                     <div 
                         className="absolute inset-0 z-0"

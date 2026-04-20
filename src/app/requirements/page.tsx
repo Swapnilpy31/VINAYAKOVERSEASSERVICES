@@ -104,7 +104,7 @@ export default function RequirementsPage() {
 
         {/* Hero Banner */}
         <section
-          className="relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden"
+          className="hidden md:block relative bg-white py-24 text-center border-b border-[#E5E7EB] overflow-hidden"
           aria-label="Requirements page header"
         >
           {/* Grid Background */}

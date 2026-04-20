@@ -65,6 +65,23 @@ export default function Contact() {
 
                     </div>
                 </div>
+
+                {/* Map Section */}
+                <div className="max-w-5xl mx-auto mt-12 bg-white p-2 md:p-4 shadow-xl border border-[#E5E7EB]">
+                    <div className="w-full h-[400px] md:h-[500px]">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Old+Hoshiarpur+Road,+Una,+Himachal+Pradesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Vinayak Overseas Services Office Location Map"
+                            className="grayscale hover:grayscale-0 transition-all duration-700"
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     );

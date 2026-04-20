@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { ArrowRight, Layers } from "lucide-react";
 import AnimatedHeading from "./AnimatedHeading";
 
@@ -58,6 +59,7 @@ const services = [
 ];
 
 export default function Services() {
+    const router = useRouter();
     const schemaData = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -142,15 +144,18 @@ export default function Services() {
                                     </p>
                                 </div>
 
-                                {/* CTA Link */}
-                                <a
-                                    href="/contact-info"
-                                    onClick={(e) => e.stopPropagation()}
+                                {/* CTA Button instead of a tag to prevent nested anchors */}
+                                <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        router.push("/contact-info");
+                                    }}
                                     className="inline-flex items-center gap-2 text-white font-semibold text-sm uppercase tracking-wide group-hover:text-[#F5B301] transition-colors mt-2 hover:underline underline-offset-4"
                                 >
                                     {svc.cta}
                                     <ArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2" />
-                                </a>
+                                </button>
                             </div>
                         </a>
                     ))}

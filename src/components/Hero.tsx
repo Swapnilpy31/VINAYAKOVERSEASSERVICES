@@ -56,7 +56,7 @@ export default function Hero() {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up delay-300">
                         <a
-                            href="#aboutus"
+                            href="#about"
                             id="hero-hire-talent"
                             className="btn-primary text-base px-8 py-4"
                         >
