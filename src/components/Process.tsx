@@ -114,19 +114,7 @@ export default function Process() {
 
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-20 text-center">
-          <p className="text-[#4B5563] mb-6">
-            Ready to start your recruitment journey? Contact us today.
-          </p>
-          <a href="#contact" className="btn-primary inline-flex uppercase">
-            Start Hiring Now
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-
+        
       </div>
     </section>
   );
