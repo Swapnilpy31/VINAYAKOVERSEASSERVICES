@@ -63,18 +63,15 @@ export default function About({ showCertificate = true }: { showCertificate?: bo
               </span>
             </div>
 
-            <AnimatedHeading 
+            <AnimatedHeading
               text="A Trusted International [Recruitment Partner.]"
               className="text-[#24342b] text-4xl lg:text-5xl font-bold leading-tight"
             />
 
             <p className="text-[#4B5563] leading-relaxed text-lg">
-              VCS Website is a trusted international recruitment partner, delivering
-              skilled manpower solutions across industries including construction, oil & gas,
-              healthcare, hospitality, and manufacturing. With a strong compliance framework
-              aligned with Government of India regulations, we ensure{" "}
-              <strong className="text-[#24342b]">ethical, transparent, and efficient hiring</strong>{" "}
-              for employers worldwide.
+              VCS (Vinayak Overseas Services) is a trusted overseas recruitment company in India, specializing in skilled manpower solutions across key industries such as construction, oil & gas, healthcare, hospitality, and manufacturing. Backed by a robust compliance framework aligned with Government of India regulations,
+              <strong className="text-[#24342b]">we ensure ethical, transparent, and efficient hiring</strong>{" "}
+              processes for employers worldwide.
             </p>
 
             <ul className="space-y-3">

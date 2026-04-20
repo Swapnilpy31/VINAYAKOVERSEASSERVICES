@@ -2,10 +2,25 @@ import { Metadata } from 'next';
 import Navbar from "@/components/Navbar";
 import AboutComponent from "@/components/About";
 import Footer from "@/components/Footer";
+import Requirements from "@/components/Requirements";
 
 export const metadata: Metadata = {
-    title: 'About Us | VCS Website',
-    description: 'Learn about VCS Website, our mission, vision, and our commitment to providing top-tier overseas manpower recruitment.',
+    title: 'About Us | Foreign Job Consultants Una HP | VCS Overseas Services',
+    description: 'VCS (Vinayak Overseas Services) is the leading overseas recruitment agency in Una, Himachal Pradesh. Specializing in Canada PR, Germany nursing, Dubai jobs, UK nursing, driver jobs abroad & construction visas. Serving Hamirpur, Kangra & near Chandigarh road.',
+    keywords: [
+        'overseas recruitment in Una',
+        'foreign job consultants Una Himachal',
+        'visa consultant Una',
+        'Canada PR consultancy Una',
+        'Germany nursing jobs Una',
+        'nursing jobs in UK from Una',
+        'driver jobs abroad Una HP',
+        'construction work visa Una',
+        'abroad job placement Hamirpur students',
+        'foreign recruitment near Chandigarh road',
+        'manpower agency Una HP',
+        'Dubai job agencies near me',
+    ],
 };
 
 export default function AboutPage() {
@@ -32,6 +47,9 @@ export default function AboutPage() {
 
                 {/* Re-using the About Component */}
                 <AboutComponent />
+
+                {/* Requirements Section */}
+                <Requirements />
 
                 <section className="bg-white py-16">
                     <div className="container mx-auto px-6 max-w-5xl text-center">

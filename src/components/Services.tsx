@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Layers } from "lucide-react";
 import AnimatedHeading from "./AnimatedHeading";
 
 const services = [
@@ -10,6 +12,8 @@ const services = [
         img: "/images/modern_indian_skilled_trades.png",
         alt: "Skilled welders working at industrial site",
         cta: "Hire Talent",
+        href: "/services#skilled-trades",
+        id: "skilled-trades",
     },
     {
         title: "International Healthcare Staffing Solutions",
@@ -18,6 +22,8 @@ const services = [
         img: "/images/modern_indian_healthcare.png",
         alt: "Nurses providing patient care in hospital",
         cta: "Get Workforce",
+        href: "/services#healthcare",
+        id: "healthcare",
     },
     {
         title: "Hospitality & Retail Staffing Services",
@@ -26,6 +32,8 @@ const services = [
         img: "/images/modern_indian_hospitality.png",
         alt: "Hospitality staff providing premium service",
         cta: "Request Candidates",
+        href: "/services#hospitality",
+        id: "hospitality",
     },
     {
         title: "IT & BPO Recruitment Services",
@@ -34,6 +42,8 @@ const services = [
         img: "/images/modern_indian_it.png",
         alt: "Modern IT and BPO professionals working in an office",
         cta: "Hire Talent",
+        href: "/services#it-bpo",
+        id: "it-bpo",
     },
     {
         title: "Oil, Gas & Construction Workforce",
@@ -42,6 +52,8 @@ const services = [
         img: "/images/modern_indian_oil_gas.png",
         alt: "Engineers working on an international oil and gas rig",
         cta: "Request Candidates",
+        href: "/services#oil-gas",
+        id: "oil-gas",
     },
 ];
 
@@ -57,6 +69,7 @@ export default function Services() {
                 "name": svc.title,
                 "description": svc.desc,
                 "serviceType": svc.category,
+                "url": `https://www.vinayakoverseasservices.com${svc.href}`,
                 "provider": {
                     "@type": "Organization",
                     "name": "VCS Website"
@@ -94,9 +107,12 @@ export default function Services() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((svc, i) => (
-                        <div
+                        <a
                             key={i}
-                            className="group relative h-[420px] md:h-[480px] overflow-hidden shadow-lg border border-[#E5E7EB] bg-[#0B1F3A] cursor-pointer flex flex-col justify-end transform transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2 lg:last:col-span-1"
+                            id={svc.id}
+                            href={svc.href}
+                            className="group relative h-[420px] md:h-[480px] overflow-hidden shadow-lg border border-[#E5E7EB] bg-[#23352b] flex flex-col justify-end transform transition-transform duration-500 hover:shadow-2xl hover:-translate-y-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B301]"
+                            aria-label={svc.title}
                         >
                             {/* Background Image */}
                             <Image
@@ -107,21 +123,21 @@ export default function Services() {
                             />
 
                             {/* Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/70 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#23352b] via-[#23352b]/70 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-95" />
 
                             {/* Content */}
                             <div className="relative z-20 p-8 flex flex-col h-full justify-end">
-                                <span className="inline-block py-1 px-3 mb-4 bg-[#F5B301]/20 text-[#F5B301] border border-[#F5B301]/30 text-xs font-bold uppercase tracking-wider w-fit transform transition-transform duration-500 group-hover:-translate-y-2">
+                                <span className="inline-block py-1 px-3 mb-4 bg-[#F5B301]/20 text-[#F5B301] border border-[#F5B301]/30 text-xs font-bold uppercase tracking-wider w-fit transition-transform duration-500 group-hover:-translate-y-1">
                                     {svc.category}
                                 </span>
 
-                                <h3 className="text-2xl font-bold text-white mb-3 leading-snug group-hover:text-[#F5B301] transition-colors duration-300 transform group-hover:-translate-y-2">
+                                <h3 className="text-2xl font-bold text-white mb-3 leading-snug group-hover:text-[#F5B301] transition-colors duration-300 group-hover:-translate-y-1 transform">
                                     {svc.title}
                                 </h3>
 
-                                {/* Description - Fades in and slides up slightly on hover */}
-                                <div className="h-0 overflow-hidden opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                                    <p className="text-white/80 text-sm leading-relaxed mb-6">
+                                {/* Description — smooth max-height reveal */}
+                                <div className="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                                    <p className="text-white/80 text-sm leading-relaxed mb-5">
                                         {svc.desc}
                                     </p>
                                 </div>
@@ -129,17 +145,39 @@ export default function Services() {
                                 {/* CTA Link */}
                                 <a
                                     href="/contact-info"
-                                    className="flex items-center gap-2 text-white font-semibold text-sm uppercase tracking-wide group-hover:text-[#F5B301] transition-colors mt-2"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="inline-flex items-center gap-2 text-white font-semibold text-sm uppercase tracking-wide group-hover:text-[#F5B301] transition-colors mt-2 hover:underline underline-offset-4"
                                 >
                                     {svc.cta}
                                     <ArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-2" />
                                 </a>
                             </div>
-                        </div>
+                        </a>
                     ))}
+                </div>
+
+                {/* Explore All Services CTA */}
+                <div className="mt-14 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a
+                        href="/services"
+                        className="btn-primary inline-flex items-center gap-2 uppercase"
+                        id="explore-all-services-btn"
+                    >
+                        <Layers className="w-4 h-4" />
+                        Explore All Services
+                    </a>
+                    <a
+                        href="/contact-info"
+                        className="btn-secondary-dark inline-flex items-center gap-2 uppercase"
+                        id="contact-us-services-btn"
+                    >
+                        Request Workforce
+                        <ArrowRight className="w-4 h-4" />
+                    </a>
                 </div>
 
             </div>
         </section>
     );
 }
+
