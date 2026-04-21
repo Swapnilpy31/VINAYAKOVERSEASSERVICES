@@ -50,6 +50,7 @@ const localBusinessSchema = {
   url: "https://www.vinayakoverseasservices.com",
   telephone: "+91-8894412776",
   email: "vinayakoverseas90@gmail.com",
+
   address: {
     "@type": "PostalAddress",
     streetAddress: "Shop No 5, Ground & First Floor, Old Hoshiarpur Road",
